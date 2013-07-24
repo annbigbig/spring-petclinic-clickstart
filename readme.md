@@ -1,5 +1,12 @@
 # Spring PetClinic Sample Application
 
+This clickstart is a slightly customized version of the [Spring Petclinic Sample Application](https://github.com/SpringSource/spring-petclinic) maintained by the Spring Framework Community.
+CloudBees PetClinic details are available [here](https://github.com/CloudBees-community/spring-petclinic-clickstart/blob/master/cloudbees.md).
+
+Press the button to build, test and deploy this instantly:
+
+<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/Cloudbees-community/spring-petclinic-clickstart/master/clickstart.json"><img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
+
 ## Understanding the Spring Petclinic application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
 
