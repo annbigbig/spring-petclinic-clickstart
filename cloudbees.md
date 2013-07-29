@@ -11,6 +11,8 @@ bees config:set -a petclinic -P jdbc.initLocation=classpath:db/mysql/initDB.sql
 bees config:set -a petclinic -P jdbc.dataLocation=classpath:db/mysql/populateDB.sql
 bees config:set -a petclinic -P hibernate.dialect=org.hibernate.dialect.MySQLDialect
 bees config:set -a petclinic -P jpa.database=MYSQL
+bees config:set -a petclinic -P jpa.showSql=false
+
 
 bees app:deploy -a petclinic target/petclinic.war
 ```
