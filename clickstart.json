@@ -1,6 +1,6 @@
 {
-    "id": "spring-petclinic-clickstart",
-    "name": "Spring PetClinic App",
+    "id": "spring-petclinic-loaderio-clickstart",
+    "name": "Spring PetClinic App for loader.io test",
     "source": "github",
     "description" : "Spring PetClinic App deployed on Tomcat7 via Jenkins with maven",
     "doc-url" : "https://github.com/CloudBees-community/spring-petclinic-clickstart/blob/master/readme.md",
@@ -8,7 +8,7 @@
 
     "disabled" : false,
     "supported-by" : "community",
-    "app-package" : "https://examples.ci.cloudbees.com/job/clickstart/job/spring-petclinic-clickstart/lastSuccessfulBuild/artifact/target/petclinic.war",
+    "app-package" : "https://community.ci.cloudbees.com/job/spring-petclinic-clickstart-loader-io/lastSuccessfulBuild/artifact/target/spring-petclinic-loaderio-1.0.0-SNAPSHOT.war",
     "order" : 3,
    
     "runtime": {
