@@ -26,12 +26,5 @@
             "type": "mysql",
             "alias": "petclinic"
         }
-    ],
-    "build-with-jenkins": {
-        "template": {
-            "type": "maven",
-            "options": {
-            }
-        }
-    }
+    ]
 }
