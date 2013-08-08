@@ -1,7 +1,6 @@
 {
     "id": "spring-petclinic-loaderio-clickstart",
     "name": "Spring PetClinic App for loader.io",
-    "source": "github",
     "description" : "Spring PetClinic App deployed on Tomcat7 via Jenkins with maven",
     "doc-url" : "https://github.com/CloudBees-community/spring-petclinic-clickstart/blob/master/readme.md",
     "icon" : "https://raw.github.com/CloudBees-community/spring-petclinic-clickstart/master/clickstart-icon.png",
