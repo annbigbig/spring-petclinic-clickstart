@@ -1,4 +1,3 @@
-
 # Step by Step creation of the environment
 
 ```
@@ -30,11 +29,15 @@ command `bees config:set -P param=value`. These System Properties are defined in
 
 * Use a JNDI DataSource instead of an embedded DataSource activating the Spring Profile `javaee` (see `datasource-config.xml`)
 
-      bees config:set -a <MYAPP> -P spring.profiles.active=default,javaee
+    ```
+    bees config:set -a <MYAPP> -P spring.profiles.active=default,javaee
+    ```
 
 * Specify the MySQL dialect
 
-      config:set -a petclinic -P jdbc.initLocation=classpath:db/mysql/initDB.sql
-      config:set -a petclinic -P jdbc.dataLocation=classpath:db/mysql/populateDB.sql
-      config:set -a petclinic -P hibernate.dialect=org.hibernate.dialect.MySQLDialect
-      config:set -a petclinic -P jpa.database=MYSQL
+    ```
+    config:set -a petclinic -P jdbc.initLocation=classpath:db/mysql/initDB.sql
+    config:set -a petclinic -P jdbc.dataLocation=classpath:db/mysql/populateDB.sql
+    config:set -a petclinic -P hibernate.dialect=org.hibernate.dialect.MySQLDialect
+    config:set -a petclinic -P jpa.database=MYSQL
+    ```
