@@ -16,3 +16,25 @@ bees config:set -a petclinic -P jpa.showSql=false
 
 bees app:deploy -a petclinic target/petclinic.war
 ```
+
+# Spring PetClinic Clickstart FAQ
+
+## How does the ClickStart specifies usage of MySQL with a JNDI DataSource
+
+By default, SpringPetClinic uses an embedded HSQL Database defined in `data-access.properties`.
+
+The CloudBees Spring PetClinic Clickstart overides the default parameters defined in `data-access.properties`
+to use a JNDI DataSource connected to a MySQL DataSource. This is done setting System Properties with the CloudBees SDK
+command `bees config:set -P param=value`. These System Properties are defined in the ClickStart configuration file:
+[clickstart.json](https://github.com/CloudBees-community/spring-petclinic-clickstart/blob/master/clickstart.json).
+
+* Use a JNDI DataSource instead of an embedded DataSource activating the Spring Profile `javaee` (see `datasource-config.xml`)
+
+      bees config:set -a <MYAPP> -P spring.profiles.active=default,javaee
+
+* Specify the MySQL dialect
+
+      config:set -a petclinic -P jdbc.initLocation=classpath:db/mysql/initDB.sql
+      config:set -a petclinic -P jdbc.dataLocation=classpath:db/mysql/populateDB.sql
+      config:set -a petclinic -P hibernate.dialect=org.hibernate.dialect.MySQLDialect
+      config:set -a petclinic -P jpa.database=MYSQL

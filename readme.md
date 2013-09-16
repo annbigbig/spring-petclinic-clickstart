@@ -7,6 +7,12 @@ Press the button to build, test and deploy this instantly:
 
 <a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/Cloudbees-community/spring-petclinic-clickstart/master/clickstart.json"><img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
 
+# Spring PetClinic on CloudBees Platform
+
+**[Spring PetClinic on CloudBees Platform](cloudbees.md)**
+
+# Spring PetClinic Initial Docs
+
 ## Understanding the Spring Petclinic application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
 
